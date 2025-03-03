@@ -3,9 +3,9 @@
 #include <ctime>
 
 int main() {
-    // Initialize random number generator
-    std::srand(std::time(0)); // use current time as seed for random generator
-    int random_number = std::rand() % 100 + 1; // random number between 1 and 100
+    
+    std::srand(std::time(0)); 
+    int random_number = std::rand() % 100 + 1; 
 
     int user_guess = 0;
     int attempts = 0;
@@ -14,7 +14,7 @@ int main() {
     std::cout << "I have selected a random number between 1 and 100.\n";
     std::cout << "Try to guess the number!\n";
 
-    // Loop until the user guesses the correct number
+    
     do {
         std::cout << "Enter your guess: ";
         std::cin >> user_guess;
